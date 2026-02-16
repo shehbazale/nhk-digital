@@ -48,23 +48,18 @@ export default function Navigation() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <motion.div
-            className="flex items-center space-x-1"
+            className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
           >
-            {/* <Palette className="w-8 h-8 text-orange-500" /> */}
-            <div className="flex items-center space-x-2">
-              <div className="relative flex items-center">
-                {/* Blue background */}
-                <div className="absolute inset-0 bg-blue-600 rounded-full w-12 h-12"></div>
-                {/* White oval (horizontally elongated) with NHK */}
-                <div className="relative bg-white rounded-full px-4 py-1.5 flex items-center justify-center mx-1 my-1" style={{ borderRadius: '9999px' }}>
-                  <span className="text-blue-600 font-bold text-sm">NHK</span>
-                </div>
-              </div>
-              <span className="text-xl font-bold lowercase text-white">
-                Digital
-              </span>
-            </div>
+            <Image
+              src="/NHK_logo.jpeg"
+              alt="NHK Digital"
+              width={80}
+              height={28}
+              className="rounded-xl object-contain"
+              priority
+            />
+
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -92,9 +87,9 @@ export default function Navigation() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="text-white" />
+              <X className="w-6 h-6 text-blue-200 hover:text-white transition-colors" />
             ) : (
-              <Menu className="text-white" />
+              <Menu className="w-6 h-6 text-blue-200 hover:text-white transition-colors" />
             )}
           </button>
         </div>

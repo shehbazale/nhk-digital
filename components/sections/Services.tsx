@@ -38,7 +38,7 @@ const services = [
     title: 'Business Card Design',
     description:
       'Professional business cards that leave a memorable first impression with potential clients.',
-    color: 'from-blue-500 to-cyan-500',
+    color: 'from-blue-500 to-blue-600',
   },
   {
     icon: Youtube,
@@ -52,7 +52,7 @@ const services = [
     title: 'Menu Design',
     description:
       'Appetizing menu designs that showcase your offerings and enhance the dining experience.',
-    color: 'from-green-500 to-emerald-500',
+    color: 'from-blue-500 to-blue-600',
   },
 ];
 
