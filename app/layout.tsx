@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: 'NHK Digital - Digital Design Agency',
   description: 'Transform your brand with stunning visual designs. Expert logo design, social media graphics, flyers, and more.',
     icons: {
-    icon: '/NHK digital.jpeg',      
-    shortcut: '/NHK digital.jpeg',
-    apple: '/NHK digital.jpeg',
+    icon: '/NHK_logo1.jpeg',      
+    shortcut: '/NHK_logo1.jpeg',
+    apple: '/NHK_logo1.jpeg',
   },
   openGraph: {
     images: [

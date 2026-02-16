@@ -42,7 +42,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-[10rem] font-bold text-blue-600">
+          <h1 className="text-5xl md:text-7xl lg:text-[10rem] font-bold text-gray-100">
             NHK Digital
           </h1>
         </motion.div>

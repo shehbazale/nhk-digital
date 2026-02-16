@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Palette, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   const socialLinks = [
@@ -18,13 +19,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="relative w-10 h-10 flex items-center justify-center">
-                <div className="absolute inset-0 bg-blue-600 rounded-full"></div>
-                <div className="relative bg-white rounded-full px-2 py-1 flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-sm">NHK</span>
-                </div>
-              </div>
-              <span className="text-2xl font-bold text-white">NHK Digital</span>
+              <Image
+                src="/NHK_logo.jpeg"
+                alt="NHK Digital"
+                width={72}
+                height={24}
+                className="rounded-xl object-contain"
+              />
+              {/* <span className="text-2xl font-bold text-white">NHK Digital</span> */}
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Transforming ideas into stunning visual experiences. Your trusted
